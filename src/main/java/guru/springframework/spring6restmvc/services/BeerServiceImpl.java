@@ -17,7 +17,6 @@ public class BeerServiceImpl implements BeerService {
 
     public BeerServiceImpl() {
         this.beerMap = new HashMap<>();
-
         Beer beer1 = Beer.builder()
                 .id(UUID.randomUUID())
                 .version(1)
@@ -29,7 +28,6 @@ public class BeerServiceImpl implements BeerService {
                 .createdDate(LocalDateTime.now())
                 .updateDate(LocalDateTime.now())
                 .build();
-
         Beer beer2 = Beer.builder()
                 .id(UUID.randomUUID())
                 .version(1)
@@ -41,7 +39,6 @@ public class BeerServiceImpl implements BeerService {
                 .createdDate(LocalDateTime.now())
                 .updateDate(LocalDateTime.now())
                 .build();
-
         Beer beer3 = Beer.builder()
                 .id(UUID.randomUUID())
                 .version(1)
