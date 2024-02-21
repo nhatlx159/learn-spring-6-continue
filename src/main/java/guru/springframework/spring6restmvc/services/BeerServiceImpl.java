@@ -50,9 +50,21 @@ public class BeerServiceImpl implements BeerService {
                 .createdDate(LocalDateTime.now())
                 .updateDate(LocalDateTime.now())
                 .build();
+        Beer beer4 = Beer.builder()
+                .id(UUID.randomUUID())
+                .version(2)
+                .beerName("Tighnah")
+                .beerStyle(BeerStyle.IPA)
+                .upc("22393")
+                .price(new BigDecimal("5.99"))
+                .quantityOnHand(12)
+                .createdDate(LocalDateTime.now())
+                .updateDate(LocalDateTime.now())
+                .build();
         beerMap.put(beer1.getId(), beer1);
         beerMap.put(beer2.getId(), beer2);
         beerMap.put(beer3.getId(), beer3);
+        beerMap.put(beer4.getId(), beer4);
     }
 
     @Override
